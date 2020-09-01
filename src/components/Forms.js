@@ -1,5 +1,5 @@
 import React from 'react';
-class Forms extends Component {
+class Forms extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
