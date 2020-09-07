@@ -1,3 +1,5 @@
+//this components is too render each todo that was passed by the ToDos component.
+ //ir manages the change of 
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
@@ -23,10 +25,10 @@ export class TodoItem extends Component {
           <input
             type="checkbox"
             defaultChecked={completed}
-            onChange={this.props.markComplete.bind(this, id)}
-          />{" "}
+            onChange={this.props.markComplete.bind(this, id)}/*Here both markComplete and delTodo and are calling the functions in the app.js comp and passing the ID of specific todo where onChange happened*/
+          />{" "/*space btw input and title*/} 
           {title}
-          <button onClick={this.props.delTodo.bind(this, id)} style={btnStyle}>
+          <button onClick={this.props.delTodo.bind(this, id)} style={btnStyle/*for this you need and whatever you want as style const btnSytle={} (at bottom) */}>
             x
           </button>
         </p>
