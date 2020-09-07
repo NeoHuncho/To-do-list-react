@@ -1,6 +1,8 @@
+//this is a functional component, it is just a markup
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+//notice this is function based component
 function Header() {
   return (
     <header style={headerStyle}>

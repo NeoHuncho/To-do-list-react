@@ -7,12 +7,12 @@ export class AddTodo extends Component {
   }
 
   onSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault();//prevents the vanilla default submit action
     this.props.addTodo(this.state.title);
     this.setState({ title: '' });
   }
-
-  onChange = (e) => this.setState({ [e.target.name]: e.target.value });
+//the e.target.name is here so that imagine you had multiple fields, you would not have too make a onChange for each one, dont forget the BRACKETS!
+  onChange = (e) => this.setState({ [e.target.name] : e.target.value });
 
   render() {
     return (
