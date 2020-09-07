@@ -18,7 +18,7 @@ export class TodoItem extends Component {
   };
 
   render() {
-    const { id, title, completed } = this.props.todo;
+    const { id, title, completed } = this.props.todo;// called destructuring, allows you to not have to do this.props.thing
     return (
       <div style={this.getStyle()}>
         <p>
