@@ -21,11 +21,13 @@ class App extends Component {
   }
 
   // Toggle Complete
-  markComplete = id => {//receiving id from toDoItem onChange
+  //receiving id from toDoItem onChange
+  markComplete = id => {
     this.setState({
-      todos: this.state.todos.map(todo => {//here the map function is going over each todos in the state and finds the Todo where the passed in ID from onChange is the same
+      //here the map function is going over each todos in the state and finds the Todo where the passed in ID from onChange is the same
+      todos: this.state.todos.map(todo => {
         if (todo.id === id) {
-          todo.completed =!/*=! means reverse bololean value*/ todo.completed;//Changes the completed property to the reverse
+          todo.completed = !/*=! means reverse bololean value*/ todo.completed;//Changes the completed property to the reverse
         }
         return todo;
       })
@@ -34,7 +36,8 @@ class App extends Component {
 
   // Delete Todo
   delTodo = id => {
-    axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`/*same as top but finds todo by id in axios  so that it is not stored anymore*/).then(res =>
+    /*same as top but finds todo by id in axios  so that it is not stored anymore*/
+    axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`).then(res =>
       this.setState({
         todos: [...this.state.todos.filter(todo => todo.id !== id)]
       })
