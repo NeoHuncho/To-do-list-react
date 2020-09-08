@@ -67,12 +67,13 @@ class App extends Component {
               exact path="/" render={props => (
                //you use React.Fragment when you dont need something like a div
                 <React.Fragment>
-                  <AddTodo addTodo={this.addTodo} />
+                  <AddTodo addTodo={this.addTodo} /> 
                   <Todos
                     todos={this.state.todos}
                     markComplete={this.markComplete}
                     delTodo={this.delTodo}
                   />
+                 
                 </React.Fragment>
               )}
             />
