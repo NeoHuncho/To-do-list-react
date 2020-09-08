@@ -1,11 +1,32 @@
 @media screen and (max-width: 540px){
   .addTodoCSS{
     position: fixed;
-    left: 0;
-    bottom: 0;
- 
- 
-   
+    bottom: 1%;  
+    left: 10%;
+    right: 10%;
+  }
+  .typebox{
+    flex: 6;
+    padding: 20px;
+  
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: left;
+    
+  }
+  ::placeholder {
+  
+    font-size: 18px;
+    text-align: left;
+  }
+  .btn{
+    margin-left: 2%;
+    color: antiquewhite;
+    background-color: blue;
+    flex: 4;
+    border-radius: 50px;
+    border-color: white;
+    font-size:15px;
   }
 }
 @media screen and (min-width: 540px){
