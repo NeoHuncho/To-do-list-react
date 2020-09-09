@@ -7,6 +7,9 @@ export class TodoItem extends Component {
   getStyle = () => {
     return {
       background: "#f4f4f4",
+      margin:'1%',
+      marginLeft:'5%',
+      marginRight:'5%',
       padding: "10px",
       borderBottom: "1px #ccc dotted",
       textDecoration: this.props.todo.completed ? "line-through" : "none",
@@ -20,7 +23,7 @@ export class TodoItem extends Component {
   render() {
     const { id, title, completed } = this.props.todo;// called destructuring, allows you to not have to do this.props.thing
     return (
-      <div style={this.getStyle()}>
+      <div style={this.getStyle()} >
         <p>
           <input
             type="checkbox"

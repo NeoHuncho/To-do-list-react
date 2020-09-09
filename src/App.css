@@ -22,10 +22,10 @@
   .btn{
     margin-left: 2%;
     color: antiquewhite;
-    background-color: blue;
-    flex: 4;
+    background-color: darkblue;
+    flex: 3;
     border-radius: 50px;
-    border-color: white;
+    border-color:darkblue;
     font-size:15px;
   }
 }

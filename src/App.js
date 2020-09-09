@@ -61,14 +61,14 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <div className="container">
+          <div className="container" >
             <Header />
             <Route // this is saying when browser is on the https with nothing after it all this should render 
               exact path="/" render={props => (
                //you use React.Fragment when you dont need something like a div
-                <React.Fragment>
+                <React.Fragment >
                   <AddTodo addTodo={this.addTodo} /> 
-                  <Todos
+                  <Todos 
                     todos={this.state.todos}
                     markComplete={this.markComplete}
                     delTodo={this.delTodo}
